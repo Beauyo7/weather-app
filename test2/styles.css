@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle, rgba(70, 130, 180, 0.5), rgba(255, 255, 255, 1));
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  padding: 20px;
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #00aced;
+  text-transform: uppercase;
+}
+
+.header p {
+  font-size: 1.5rem;
+  color: #bbb;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.weather-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.weather-info p {
+  font-size: 1.8rem;
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.weather-info img {
+  width: 150px;
+  height: 150px;
+  margin: 10px 0;
+}
+
+.weather-info h1 {
+  font-size: 5rem;
+  color: #00ff6a;
+}
+
+.weather-info #feels-like {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+.additional-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.metric {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.metric img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.metric p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.metric h2 {
+  font-size: 2rem;
+  color: #00aced;
+}
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+  height: 400px;
+  margin: 20px auto;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.city-card {
+  flex: 0 0 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.city-card h2 {
+  font-size: 2.5rem;
+  color: #00ff6a;
+  margin-bottom: 10px;
+}
+
+.city-card p {
+  font-size: 1.8rem;
+  margin: 5px 0;
+  color: #ddd;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #00aced;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .weather-info h1 {
+    font-size: 3rem;
+  }
+  .carousel-container {
+    width: 100%;
+    height: 300px;
+  }
+  .carousel-button {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+}

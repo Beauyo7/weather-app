@@ -1,0 +1,7 @@
+[
+    { "city": "Aix-en-Provence", "latitude": 43.5283, "longitude": 5.4497 },
+    { "city": "Bordeaux", "latitude": 44.8404, "longitude": -0.5805 },
+    { "city": "Lille", "latitude": 50.633, "longitude": 3.0586 },
+    { "city": "Toulouse", "latitude": 43.6043, "longitude": 1.4437 },
+    { "city": "Nice", "latitude": 43.7031, "longitude": 7.2661 }
+]

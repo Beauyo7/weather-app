@@ -1,0 +1,110 @@
+/* Style global */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #083d449d, #083d449d); /* Bleu clair pour le ciel */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-app {
+    text-align: center;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.2); /* Augmenter l'opacité pour un meilleur contraste */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Ombre renforcée pour une meilleure lisibilité */
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Titre principal */
+h1 {
+    font-size: 2.2em;
+    color: #ffd900; /* Jaune vif pour attirer l'attention */
+    margin-bottom: 20px;
+   
+}
+
+/* Carte météo */
+.weather-card {
+    background: rgba(1, 16, 26, 0.082); /* Plus de contraste pour le fond */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.055); /* Ombre plus forte pour plus de lisibilité */
+    margin-bottom: 20px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+
+
+/* Titre de la carte météo */
+.weather-card h2 {
+    font-size: 1.8em;
+    color: #00eaff; /* Bleu clair comme le ciel */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Détails de la météo */
+.weather-card p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #ffffff; /* Blanc pour les textes */
+}
+
+.weather-card p span {
+    font-weight: bold;
+    color: #ffd900; /* Jaune pour accentuer certains paramètres */
+}
+
+/* Boutons de navigation */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Style des boutons de navigation */
+.nav-button {
+    background: #00eaff; /* Bleu clair pour les boutons */
+    color: #1f1f2e;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre plus présente pour les boutons */
+}
+
+/* Hover sur les boutons */
+.nav-button:hover {
+    background: #0077b6; /* Bleu plus foncé au survol */
+    color: #ffffff; /* Texte blanc sur le bouton */
+}
+
+/* Responsive : pour les écrans plus petits */
+@media (max-width: 600px) {
+    .weather-app {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .weather-card h2 {
+        font-size: 1.6em;
+    }
+
+    .nav-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+
